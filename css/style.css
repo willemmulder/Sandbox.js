@@ -1,17 +1,15 @@
 /* custom CSS */
 
-iframe { width: 100%; height: 1000px; }
+iframe { width: 100%; height: 500px; }
 
-.projects li.active { border-bottom: 1px solid #fff; }
-/*.top { display: none; }*/
 .runbutton { font-weight: normal; color: #eee; padding: 10px; margin: 20px 0px 20px 0px; font-size: 32px; background: #555; display: inline-block; margin: 0px; margin-left: 20px; color: #fff; background: #66d; display: inline-block; padding: 10px; }
 
-.totalinput, .totalresult { float: left; padding: 10px; }
-.totalinput { width: 70%; }
-.totalresult { width: 30%; }
+.totalinput, .totalrunbutton, .totalresult { float: left; padding: 20px; }
+.totalinput { width: 50%; }
+.totalresult { width: 50%; }
 
 .totalinput > div > div, .totalinput > div > div > div { margin-left: 20px; }
-.totalinput textarea { width: 100%; height: 200px; }
+.totalinput textarea { width: 100%; height: auto; }
 .codeeditor { background: #fff; }
 
 .CodeMirror.input { width: 55%; float: left; overflow: auto; }

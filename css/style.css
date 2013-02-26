@@ -1,0 +1,20 @@
+/* custom CSS */
+
+iframe { width: 100%; height: 1000px; }
+
+.projects li.active { border-bottom: 1px solid #fff; }
+/*.top { display: none; }*/
+.runbutton { font-weight: normal; color: #eee; padding: 10px; margin: 20px 0px 20px 0px; font-size: 32px; background: #555; display: inline-block; margin: 0px; margin-left: 20px; color: #fff; background: #66d; display: inline-block; padding: 10px; }
+
+.totalinput, .totalresult { float: left; padding: 10px; }
+.totalinput { width: 70%; }
+.totalresult { width: 30%; }
+
+.totalinput > div > div, .totalinput > div > div > div { margin-left: 20px; }
+.totalinput textarea { width: 100%; height: 200px; }
+.codeeditor { background: #fff; }
+
+.CodeMirror.input { width: 55%; float: left; overflow: auto; }
+.CodeMirror-scroll { overflow: hidden; }
+.CodeMirror-scrollbar { visibility: hidden; }
+.codeoutput { width: 45%; float: left; position: relative; }

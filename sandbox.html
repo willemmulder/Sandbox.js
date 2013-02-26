@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<script src="js/jquery-1.9.0.min.js"></script>
+		<script>
+			$(function() {
+				var queryString = document.location.search.substr(1);
+				var queryParameters = queryString.split("&");
+				for (var index in queryParameters) {
+					var param = queryParameters[index];
+					if (param.indexOf("js=") === 0) {
+						var script = decodeURIComponent(param.substr(3)).replace("%27", "'");
+						var $elm = $("<script>").html(script);
+						$("head").append($elm);
+					} else if (param.indexOf("css=") === 0) {
+						var style = decodeURIComponent(param.substr(4)).replace("%27", "'");
+						var $elm = $("<style>").html(style);
+						$("head").append($elm);
+					} if (param.indexOf("body=") === 0) {
+						var body = decodeURIComponent(param.substr(5)).replace("%27", "'");
+						$(".body").html(body);
+					} 
+				}
+			});
+		</script>
+	</head>
+	<body class='body'>
+
+	</body>
+</html>
